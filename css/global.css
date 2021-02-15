@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --main-color: rgb(129, 107, 255);
+}
+body,
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif, 나눔고딕, 돋움, Dotum, 굴림, Gulim,
+    'Apple SD Gothic Neo' !important;
+}
+body {
+  padding-top: 60px;
+  background: rgb(249, 249, 249);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 60px;
+  z-index: 999;
+  transition: background 0.5s;
+}
+
+.header-bg-white {
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 5px;
+}
+.header.move {
+  box-shadow: 0px 1px 0px 0px transparent;
+  background: #fff;
+}
+
+.header__logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header-nav__list {
+  display: flex;
+  font-size: 14px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.header-nav__list > li:hover {
+  color: rgb(129, 107, 255);
+}
+
+.header-nav__list > li:not(:last-child) {
+  margin-right: 30px;
+}
+.header-nav__list .active {
+  color: rgb(129, 107, 255);
+}
+
+.header-interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.header-interface > * {
+  display: inline-block;
+}
+
+.header-interface__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: none;
+  transition: color 0.4s ease;
+  cursor: pointer;
+}
+
+.header-interface__icon:hover {
+  background: rgb(240, 240, 240);
+  color: var(--main-color);
+}
+
+.header-interface__icon > svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.header-interface__icon-bell {
+  margin-left: 15px;
+}
+
+.header__usermenu {
+  display: inline-block;
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header__usermenu:hover {
+  opacity: 0.8;
+}
+
+.header__usermenu svg {
+  margin-left: 0.25rem;
+  font-size: 1.5rem;
+}

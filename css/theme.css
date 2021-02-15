@@ -1,0 +1,114 @@
+.ThemeBlock {
+  max-width: 1200px;
+  margin: 3.5rem auto 0;
+  padding: 0 0.75rem;
+}
+
+.ThemeHead {
+  color: rgb(67, 67, 67);
+}
+.ThemeHead h1 {
+  font-weight: 800;
+  font-size: 2rem;
+}
+.ThemeHead p {
+  margin-top: 1rem;
+  white-space: pre-wrap;
+}
+
+.ThemeCards {
+  margin-top: 2rem;
+}
+
+.ThemeCard {
+  display: flex;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #e2e9e2;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ThemeCard ~ .ThemeCard {
+  margin-top: 2.5rem;
+}
+
+.ThemeCard__ImgWrapper {
+  width: 236px;
+  height: 314px;
+}
+
+.ThemeCard__ImgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.ThemeCard__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  color: rgb(67, 67, 67);
+}
+
+.ThemeCard__TagList {
+  display: flex;
+  flex-wrap: wrap;
+  color: #816bff;
+}
+.ThemeCard__Title {
+  font-size: 1.75rem;
+  margin-bottom: 0.25em;
+}
+
+.ThemeCard__Avg {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  border: 1px solid #ecedef;
+}
+
+.ThemeCard__Avg img {
+  margin-right: 0.25rem;
+}
+
+.ThemeCard__TagList > li {
+  height: 29px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+  margin: 0.25rem;
+  font-size: 0.875rem;
+}
+.ThemeCard__Avg ~ li {
+  display: inline-flex;
+  background: #ecedef;
+}
+
+.ThemeCard__Content {
+  white-space: pre-wrap;
+  margin-top: 1rem;
+}
+
+.ThemeCard__PlaybackBtn {
+  margin: auto 0 0 auto;
+}
+
+.ThemeCard__PlaybackBtn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9.5rem;
+  height: 43px;
+  background: rgb(129, 107, 255);
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.ThemeCard__PlaybackBtn button:hover {
+  background: rgba(129, 107, 255, 0.9);
+}

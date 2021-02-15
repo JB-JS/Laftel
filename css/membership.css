@@ -1,0 +1,73 @@
+#main {
+  max-width: 770px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.Ticket__Block {
+  padding: 2rem;
+  background: rgb(255, 255, 255);
+}
+.Ticket__Block:not(:last-child) {
+  border: 2px solid rgb(129, 107, 255);
+}
+.Ticket__Block:not(:first-child) {
+  margin-top: 4rem;
+}
+.Ticket__Block:last-child {
+  border: 2px solid rgb(253, 216, 63);
+}
+.Ticket__Block .description {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  white-space: pre-wrap;
+}
+.Ticket__Block > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.Ticket__Block .price {
+  margin-left: auto;
+  color: rgb(129, 107, 255);
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+.Ticket__Block .buy {
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  background: rgb(129, 107, 255);
+  color: rgb(255, 255, 255);
+}
+.Ticket__Block .buy:hover {
+  background: rgb(110, 88, 255);
+}
+.Ticket__Block > div:nth-child(4) {
+  text-align: right;
+  text-decoration: underline;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+.Ticket__Block hr {
+  border: 0;
+  border-top: 1px solid rgb(224, 224, 224);
+  margin: 1.5rem 0;
+}
+.Ticket__Block h3 {
+  font-size: 1rem;
+}
+.Ticket__Block .purchase-info {
+  white-space: pre-wrap;
+  color: rgb(106, 128, 136);
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+.Ticket__Block:last-child .description {
+  white-space: nowrap;
+}
+.Ticket__Block:last-child .price {
+  color: rgb(251, 192, 45) !important;
+}
+.Ticket__Block:last-child .buy {
+  background: rgb(251, 192, 45) !important;
+}

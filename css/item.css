@@ -1,0 +1,439 @@
+.detail-rap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.detail-head {
+  height: 420px;
+  background: rgb(40, 42, 53);
+  color: #fff;
+}
+.detail-head > .detail-rap {
+  display: flex;
+  padding-top: 100px;
+}
+.detail-head__img {
+  width: 270px;
+  height: 360px;
+  background: rgb(66, 66, 66);
+}
+.detail-head__img img {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 0;
+}
+
+img {
+  border: 0;
+}
+
+.detail-head__thumbnailbtn {
+  display: flex;
+  height: 60px;
+  background: rgb(40, 42, 53);
+}
+.detail-head__thumbnailbtn > button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: bold;
+  color: rgb(212, 212, 212);
+  font-size: 0.875rem;
+}
+.detail-head__thumbnailbtn > button:hover {
+  color: #fff;
+}
+
+.detail-head__info {
+  margin-left: 1.75rem;
+  flex: auto;
+}
+
+.detail-head__info p {
+  font-weight: bold;
+  margin-top: 0.25rem;
+}
+
+.detail-head__subinfo {
+  display: flex;
+  color: rgb(212, 212, 212);
+  font-weight: 500;
+}
+
+.separator {
+  width: 1px;
+  height: 1rem;
+  background: #fff;
+  margin: 0.3rem 0.5rem 0 0.5rem;
+}
+
+.detail-head__title {
+  font-size: 2.25rem;
+  margin: 1rem 0 4.5rem 0;
+}
+
+.detail-head__genres {
+  display: flex;
+  font-weight: bold;
+}
+.detail-head__genres > li:nth-child(even) {
+  margin: 0 0.3rem;
+}
+
+.detail-head__btn {
+  float: right;
+  width: 268px;
+  height: 56px;
+  border-radius: 1.75rem;
+  background: var(--main-color);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  animation: ItemHeadBtnMove 0.25s;
+}
+
+.block {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(236, 237, 238);
+  padding: 1.5rem;
+}
+
+.detail-content {
+  display: flex;
+  margin: 6.5rem auto 4rem;
+}
+
+.detail-content main {
+  flex: 1;
+}
+
+@keyframes ItemHeadBtnMove {
+  0% {
+    transform: translateY(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes episodeListMove {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes asideMove {
+  0% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.detail-list__tabmenu {
+  display: flex;
+}
+
+.detail-list__tabmenu > li {
+  padding: 0.5rem;
+  color: rgb(128, 128, 128);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.detail-list__tabmenu > li:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.active {
+  color: rgb(129, 107, 255) !important;
+  border-bottom: 4px solid rgb(129, 107, 255);
+}
+
+.detail-list__sort {
+  margin-top: 2rem;
+  text-align: right;
+  color: rgb(128, 128, 128);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.detail-list__sort > *:first-child {
+  margin-right: 1rem;
+}
+
+.detail-list {
+  animation: episodeListMove 0.25s;
+}
+
+.detail-list__video {
+  margin: 1.5rem -1.5rem 0;
+}
+.Episode__item {
+  display: flex;
+  padding: 0.5rem 1.5rem;
+}
+.Episode__item:hover {
+  background: rgb(247, 247, 247);
+}
+.Episode__item:hover .playBtn {
+  display: flex;
+}
+
+.detail-list__video--thumbnail {
+  position: relative;
+  width: 10rem;
+  height: 7rem;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.detail-list__video--thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playBtn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  color: white;
+  transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.detail-list__video--info {
+  margin-left: 1rem;
+}
+.detail-list__video--subject {
+  font-size: 1.125rem;
+  color: rgb(73, 76, 95);
+}
+
+.date {
+  font-size: 0.875rem;
+  color: rgb(128, 128, 128);
+  margin-top: 0.15rem;
+}
+
+.ItemSeries {
+  margin-top: 1rem;
+}
+
+.similer {
+  margin-top: 1rem;
+}
+
+.similer__title {
+  font-size: 1rem;
+}
+
+.similer__items,
+.ItemSeries__Content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1rem;
+}
+.similer__item {
+  width: calc((100% - 7.5rem) / 5);
+  margin-top: 1rem;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.similer__item--img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 180px;
+  background: rgb(236, 236, 236);
+}
+
+.similer__item--img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.viewable {
+  position: absolute;
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.similer__item--title {
+  width: 100%;
+  font-weight: bold;
+  font-size: 0.875rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(80, 80, 80);
+}
+
+.similer__item--title:hover {
+  color: rgb(138, 138, 138);
+  cursor: pointer;
+}
+
+.medium {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: rgb(171, 181, 191);
+}
+
+aside {
+  width: 24rem;
+  margin-left: 1rem;
+}
+
+aside > div {
+  animation: asideMove 0.5s;
+}
+
+aside > div:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.membership__addWidget {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.label {
+  width: 1.75rem;
+  height: 1.5rem;
+  background: rgb(50, 50, 50);
+  color: rgb(255, 195, 0);
+  border-radius: 5px;
+  text-align: center;
+  line-height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.membership__addWidget p {
+  font-weight: 600;
+}
+.membership button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.75rem;
+  background: rgb(240, 237, 255);
+  padding: 0 1.25rem;
+  font-weight: 600;
+  border-radius: 5px;
+  z-index: -2;
+}
+.membership button:hover {
+  background: rgb(217, 211, 255);
+}
+.membership button > div:first-child {
+  font-size: 0.875rem;
+  text-align-last: left;
+}
+.membership button > div:last-child {
+  font-size: 1rem;
+  color: rgb(129, 107, 255);
+  display: flex;
+  align-items: center;
+}
+
+.membership button .highlight {
+  position: relative;
+  z-index: 2;
+}
+.membership button .highlight::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0.1rem;
+  width: 100%;
+  height: 0.5rem;
+  background: rgb(191, 185, 255);
+  z-index: -1;
+}
+
+.membership button > div:last-child svg {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-left: 0.2rem;
+  margin-top: 0.1rem;
+}
+
+.shop h4 {
+  font-size: 1rem;
+}
+
+.shop button {
+  width: 100%;
+  background: rgb(240, 237, 255);
+  color: rgb(129, 107, 255);
+  height: 3.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 1.2rem 0;
+}
+.shop button:hover {
+  background: rgb(217, 211, 255);
+}
+.shop p {
+  color: rgb(138, 138, 138);
+  font-size: 0.875rem;
+}
+
+.production-info__list {
+  color: rgb(117, 117, 117);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+.production-info__list b {
+  color: rgb(55, 55, 55);
+  font-weight: 500;
+}
+
+.tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(129, 107, 255);
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+.tags ul li {
+  margin-right: 0.5rem;
+}
+.tags ul li:hover {
+  opacity: 0.8;
+}
